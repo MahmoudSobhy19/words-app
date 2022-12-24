@@ -38,7 +38,7 @@ app.get('/words', (req: Request, res: Response) => {
 });
 
 // takes score in req body and res with rank rounded to nearest hundredth.
-app.get('/rank', (req: Request, res: Response) => {
+app.post('/rank', (req: Request, res: Response) => {
   try {
     const score = req.body.score;
     // get lowest score fron scoresList.
