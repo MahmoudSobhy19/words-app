@@ -9,17 +9,11 @@ interface ButtonInterface extends React.ButtonHTMLAttributes<HTMLButtonElement> 
 export const Button: React.FC<ButtonInterface> = ({ className, children, disabled, ...props }) => {
   return(
     <button 
-      className={"text-white bg-green-600 w-28 py-2 mx-4 rounded font-semibold focus:outline-none hover:bg-green-400 " + className} 
+      className={"text-white bg-green-600 w-28 py-2 mx-4 rounded font-semibold focus:outline-none hover:bg-green-500 disabled:opacity-50 " + className} 
       {...props}
       disabled={disabled}
     >
-      {disabled ? (
-        <span className="flex items-center justify-center gap-2">
-          <ImSpinner8 className="animate-spin" /> Loading
-        </span>
-      ) : (
-        children
-      )}
+      {children}
     </button>
   )
 }
