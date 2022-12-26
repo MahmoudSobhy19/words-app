@@ -5,7 +5,7 @@
 - To solve exam can choose answer from 4 chooses [adjective, adverb, noun, and verb].
 - Show Your Progrees in exam, show the answer is correct or incorrect and finally show your rank in exam.
 
-## rerequisites
+## Perequisites
 
 Download and install [Node.js](https://nodejs.org/en/download/)
 
